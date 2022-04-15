@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './App.scss';
+import { TodoList } from './components/TodoList';
+import { PhotoList } from './components/PhotoList';
 
-function App() {
+export const App = () => {
+  const [todosIsOpen, setTodosIsOpen] = useState(false);
+  const [albumsIsOpen, setAlbumsIsOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="page">
+      <div className='page__btn'>
+        <button
+          className='page__btn-item'
+          onClick={() => {
+            setTodosIsOpen(true);
+            setAlbumsIsOpen(false);
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Todos
+        </button>
+        <button
+          className='page__btn-item'
+          onClick={() => {
+            setTodosIsOpen(false);
+            setAlbumsIsOpen(true);
+          }}
+        >
+          Albums
+        </button>
+      </div>
+      {todosIsOpen && (
+        <div className='page__todos'>
+          <TodoList />
+        </div>
+      )}
+      {albumsIsOpen && (
+        <div className='page__photos'>
+          <PhotoList />
+        </div>
+      )}
     </div>
   );
 }
 
-export default App;
+

@@ -1,0 +1,29 @@
+@import '../../vars.scss';
+
+.albums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    list-style-type: none;
+    max-width: 1000px;
+    gap: 40px;
+    padding: 0;
+
+    &__content {
+        background: $photo-list-bckg;
+        border-radius: 5px;
+        margin-top: 40px;
+        padding: 0;
+
+        &:hover {
+            color: $photo-item-hovered;
+            cursor: pointer;
+        }
+    }
+}
+
+.whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

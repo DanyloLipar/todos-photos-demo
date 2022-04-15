@@ -1,0 +1,60 @@
+@import './vars.scss';
+@import './normalize.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;700&display=swap');
+
+body,
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__btn {
+        display: flex;
+        gap: 40px;
+        margin-top: 50px;
+
+        &-item {
+            border: 3px solid $button-opener;
+            background: $button-opener-bckg;
+        }
+    }
+
+    &__todos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-empty {
+            margin-top: 40px;
+            font-size: 30px;
+            background: $modal-bckg;
+            padding: 7px;
+            border-radius: 10px;
+        }
+    }
+
+    &__photos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+.lbl {
+    &__input {
+        margin-left: 10px;
+    }
+}

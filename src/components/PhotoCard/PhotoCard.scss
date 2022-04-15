@@ -1,0 +1,9 @@
+@import '../../normalize.scss';
+
+.card {
+    @include sizer;
+
+    &__img {
+        @include sizer;
+    }
+}
