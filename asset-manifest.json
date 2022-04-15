@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todos-photos-demo/static/css/main.8ccc4869.css",
+    "main.js": "/todos-photos-demo/static/js/main.7f9b728e.js",
+    "index.html": "/todos-photos-demo/index.html",
+    "main.8ccc4869.css.map": "/todos-photos-demo/static/css/main.8ccc4869.css.map",
+    "main.7f9b728e.js.map": "/todos-photos-demo/static/js/main.7f9b728e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ccc4869.css",
+    "static/js/main.7f9b728e.js"
+  ]
+}
