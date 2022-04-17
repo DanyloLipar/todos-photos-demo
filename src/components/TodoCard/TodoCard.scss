@@ -3,6 +3,7 @@
 .activity {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 
     &__delete {
@@ -10,4 +11,16 @@
         background: $delete-bckg;
         font-weight: bold;
     }
+}
+
+.container {
+    display: flex;
+
+    &__checking>input {
+        background: $checker-bckg;
+    }
+}
+
+.striked {
+    text-decoration: line-through;
 }
