@@ -15,6 +15,7 @@ export const PhotoList: React.FC = () => {
 
     return (
         <div className="whole">
+            <p>Please select the number of album (1-100)</p>
             <label className='page__photos-lbl lbl'>
                 <button
                     onClick={() => openedAlbum(allPhoto)}
