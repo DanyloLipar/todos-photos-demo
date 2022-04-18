@@ -37,7 +37,7 @@ export const TodoList: React.FC = () => {
     }
 
     const addTodo = (todo: Todo) => {
-        const newList = [...todos, todo];
+        const newList = [todo, ...todos];
         setTodos(newList);
         localStorage.setItem('todos', JSON.stringify(newList));
     }
