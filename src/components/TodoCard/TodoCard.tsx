@@ -21,8 +21,6 @@ export const TodoCard: React.FC<Props> = ({
 
     const alreadyDone = () => {
         if (!checker) {
-            const wholeTodos: Todo[] = JSON.parse(localStorage.getItem('todos') || '');
-            const todosLength = wholeTodos.length - 1;
             setChecker(true);
         }
 
