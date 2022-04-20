@@ -24,7 +24,6 @@ export const PhotoList: React.FC = () => {
 
     return (
         <div className="whole">
-            <h1>HELLO</h1>
             <p>Please select the number of album (1-100)</p>
             <label className='page__photos-lbl lbl'>
                 <button
